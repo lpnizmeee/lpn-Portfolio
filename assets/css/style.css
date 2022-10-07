@@ -635,3 +635,31 @@ img {
     display: flex;
     margin-bottom:  2rem;
 }
+
+
+/* FOOTER */
+.footer {
+    padding-top: 2rem;
+}
+
+.footer__container {
+    row-gap: 3.5rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 0.3rem;
+}
+
+.footer__icon {
+    transform: translateY(0.2rem);
+    color: rgba(216, 6, 6, 0.927);
+}
+
+.footer__title {
+    font-size: var(--normal-font-size);
+    color:  floralwhite;
+}
+
+.footer__bg {
+    background-color: var(--first-color-second);
+    padding: 0.5rem 0 0.5rem;
+}
