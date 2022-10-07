@@ -600,3 +600,38 @@ img {
 .certi__ai:hover {
     scale: 110%;
 }
+
+
+/* CONTACT */
+.contact__container {
+    row-gap: 2rem;
+    justify-content: center;
+}
+
+.contact__infomation {
+    display: flex;
+    margin-bottom: var(--mb-32);
+}
+
+.contact__icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    padding-right: .5rem;
+    transform: translateY(0.5rem);
+}
+
+.contact__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    padding-bottom: .5rem;
+}
+
+.contact__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.contact__address {
+    display: flex;
+    margin-bottom:  2rem;
+}
