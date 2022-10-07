@@ -490,6 +490,11 @@ img {
     transition: .4s;
 }
 
+.skills__list {
+    row-gap: 2.4rem;
+    padding-left: 4.3rem;
+}
+
 .skills__titles {
     display: flex;
     justify-content: space-between;
@@ -564,3 +569,34 @@ img {
     width: 5%;
 }
 
+/* .skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list {
+    height: max-content;
+    margin-bottom: var(--mb-40);
+}
+
+.skills__open .skills__arrow {
+    transform: rotate(-180deg);
+} */
+
+
+/* PROJECT */
+.project__content {
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+}
+
+.certi__ai,
+.certi__python {
+    transition: .5s;
+}
+
+.certi__python:hover,
+.certi__ai:hover {
+    scale: 110%;
+}
