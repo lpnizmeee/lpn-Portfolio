@@ -93,13 +93,13 @@ img {
 /* FONT SIZE FOR LARGE DEVICES */
 @media screen and (min-width: 968px) {
     :root {
-        --big-font-size: 4.8rem;
-        --h1-font-size: 3.6rem;
-        --h2-font-size: 2.4rem;
-        --h3-font-size: 2rem;
-        --normal-font-size: 1.6rem;
-        --small-font-size: 1.4rem;
-        --smaller-font-size: 1.3rem;
+        --big-font-size: 5.3rem;
+        --h1-font-size: 4.1rem;
+        --h2-font-size: 2.9rem;
+        --h3-font-size: 2.5rem;
+        --normal-font-size: 2.1rem;
+        --small-font-size: 1.9rem;
+        --smaller-font-size: 1.8rem;
     }
 }
 
@@ -462,8 +462,9 @@ img {
 .skills__header {
     display: flex;
     align-items: center;
-    margin-bottom: var(--mb-40);
+    margin-bottom: var(--mb-24);
     cursor: pointer;
+    margin-top: var(--mb-40);
 }
 
 .skills__icon,
@@ -587,8 +588,10 @@ img {
 /* PROJECT */
 .project__content {
     display: flex;
-    justify-content: center;
+    justify-content: space-around   ;
+    flex-wrap: wrap;
     column-gap: 4rem;
+    row-gap: 2rem;
 }
 
 .certi__ai,
@@ -598,7 +601,7 @@ img {
 
 .certi__python:hover,
 .certi__ai:hover {
-    scale: 110%;
+    scale: 150%;
 }
 
 
@@ -662,4 +665,183 @@ img {
 .footer__bg {
     background-color: var(--first-color-second);
     padding: 0.5rem 0 0.5rem;
+    width: 100vw;
 }
+
+
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: var(--mb-16);
+        margin-right: var(--mb-16);
+    }
+
+    .nav__menu {
+        padding: 3.2rem 0.4rem 6.4rem ;
+    }
+
+    .nav__list {
+        column-gap: 0;
+    }
+
+    .home__content {
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .home__blob {
+        width: 180px;
+    }
+
+    .skills__title {
+        font-size: var(--normal-font-size);
+    }
+
+    .education__data {
+        gap: .5rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+    .home__content {
+        grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .home__data {
+        grid-column: initial;
+    }
+
+    .home__img {
+        order: 1;
+        justify-self: center;
+    }
+    
+    .about__container,
+    .skills__header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education__sections{
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .section{
+        padding: 9.6rem 0 3.2rem;
+    }
+
+    .section__subtitle {
+        margin-bottom: 6.4rem;
+    }
+
+    .header {
+        top: 0;
+        bottom: initial;
+    }
+
+    .header,
+    .main,
+    .footer__container {
+        padding: 0 1.6rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 2.4rem);
+        column-gap: 1.6rem;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle {
+        display: none !important;
+    }
+
+    .nav__list {
+        display: flex;
+        column-gap: 3.2rem;
+    }
+
+    .nav__menu {
+        margin-left: auto;
+    }
+
+    .home__container {
+        row-gap: 5rem;
+    }
+
+    .home__content {
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+
+    .home__blob {
+        width: 270px;
+    }
+
+    .about__container {
+        column-gap: 10rem;
+    }
+
+    .about__img {
+        width: 350px;
+    }
+
+    .about__description {
+        text-align: initial;
+    }
+
+    .about__info {
+        justify-content: space-between;
+    }
+
+    .about__buttons{
+        justify-content: center;
+    }
+
+    .education__tabs {
+        justify-content: center;
+    }
+
+    .education__button {
+        margin: 0 var(--mb-16);
+    }
+
+    .education__sections {
+        grid-template-columns: .5fr;
+    }
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .header,
+    .main,
+    .footer__container {
+        padding: 0;
+    }
+    
+    .home__blob {
+        width: 320px;
+    }   
+    
+    .home__social {
+        transform: translateX(-9.6rem);
+    }
+
+
+}
+    
