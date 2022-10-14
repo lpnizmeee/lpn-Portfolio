@@ -601,7 +601,7 @@ img {
 
 .certi__python:hover,
 .certi__ai:hover {
-    scale: 150%;
+    scale: 120%;
 }
 
 
@@ -845,5 +845,8 @@ img {
     .nav__logo-font {
         font-size: 7rem;
     }
+    .certi__python:hover,
+    .certi__ai:hover {
+        scale: 150%;
 }
-    
+}
