@@ -547,11 +547,11 @@ img {
 }
 
 .skills__nodejs {
-    width: 0%;
+    width: 50%;
 }
 
 .skills__php {
-    width: 0%;
+    width: 50%;
 }
 
 .skills__py {
@@ -559,7 +559,7 @@ img {
 }
 
 .skills__sml {
-    width: 80%;
+    width: 50%;
 }
 
 .skills__ul {
@@ -567,7 +567,7 @@ img {
 }
 
 .skills__rl {
-    width: 5%;
+    width: 50%;
 }
 
 /* .skills__close .skills__list {
