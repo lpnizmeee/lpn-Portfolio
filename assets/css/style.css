@@ -535,16 +535,16 @@ img {
     width: 50%;
 }
 
-.skills__ror {
-    width: 10%;
+.skills__react {
+    width: 30%;
 }
 
 .skills__python {
     width: 50%;
 }
 
-.skills__rails {
-    width: 10%;
+.skills__express {
+    width: 50%;
 }
 
 .skills__nodejs {
@@ -596,12 +596,16 @@ img {
 }
 
 .certi__ai,
-.certi__python {
+.certi__python,
+.certi__junction,
+.certi__sv5t {
     transition: .5s;
 }
 
 .certi__python:hover,
-.certi__ai:hover {
+.certi__ai:hover,
+.certi__junction:hover,
+.certi__sv5t:hover {
     scale: 120%;
 }
 
@@ -847,7 +851,9 @@ img {
         font-size: 7rem;
     }
     .certi__python:hover,
-    .certi__ai:hover {
+    .certi__ai:hover,
+    .certi__junction:hover,
+    .certi__sv5t:hover {
         scale: 150%;
 }
 }
