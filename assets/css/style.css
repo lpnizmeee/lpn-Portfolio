@@ -309,9 +309,10 @@ img {
     transform: translateY(.4rem);
 }
 
-/* .home__scroll-mouse {
+.home__scroll-mouse {
     font-size: 3.2rem;
-} */
+}
+
 
 .home__scroll-name {
     font-size: var(--small-font-size);
